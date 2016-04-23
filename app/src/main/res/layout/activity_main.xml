@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.lpjxlove.viewpager_adsautoplay.MainActivity">
+<RelativeLayout
+    android:background="#fff700"
+    android:layout_width="match_parent"
+    android:layout_height="248dp"
+    android:id="@+id/frameLayout">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager"
+        android:layout_gravity="right|bottom">
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/one"
+        android:src="@drawable/point_press"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/two"
+        android:layout_toStartOf="@+id/two" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/two"
+        android:src="@drawable/point_unpress"
+        android:layout_gravity="left|bottom"
+        android:layout_alignTop="@+id/one"
+        android:layout_toLeftOf="@+id/three"
+        android:layout_toStartOf="@+id/three" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/three"
+        android:src="@drawable/point_unpress"
+        android:layout_gravity="left|bottom"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignTop="@+id/two"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+
+</RelativeLayout>
